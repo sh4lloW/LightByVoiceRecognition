@@ -12,9 +12,9 @@ from aip import AipSpeech
 # 硬件
 import Hardware
 
-APP_ID = '28989748'
-API_KEY = 'lWSKSex0rev0PWlweAO6zza6'
-SECRET_KEY = 'WdGKPb2FcH23WUcT3TYq95s3XTKC2UBM'
+APP_ID = ' '
+API_KEY = ' '
+SECRET_KEY = ' '
 client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
 
 onCmd = "打开电灯"
@@ -111,7 +111,7 @@ def Off():
     recorder.stopAndSave()
     # 读取音频文件进行语音识别，输出日志
     logText.insert('end', ' 你的指令是：')
-    cmd = VoiceRecognition('C:/Users/Admin/Desktop/人机交互/期末设计/cmdOfUser.wav')
+    cmd = VoiceRecognition(' ') # 文件目录
     logText.insert('end', cmd)
     logText.insert('end', '\n')
     logText.insert('end', '\n')
@@ -146,13 +146,13 @@ window.iconbitmap('C:/Users/Admin/Desktop/人机交互/期末设计/pic/Epoch.ic
 window.resizable(False, False)
 
 # 录音按钮的图片对象
-recordButtonImg = tk.PhotoImage(file='C:/Users/Admin/Desktop/人机交互/期末设计/pic/voice.png')
+recordButtonImg = tk.PhotoImage(file=' ')
 # 终止录音按钮的图片对象
-recordOffButtonImg = tk.PhotoImage(file='C:/Users/Admin/Desktop/人机交互/期末设计/pic/voice-off.png')
+recordOffButtonImg = tk.PhotoImage(file=' ')
 # 退出按钮的图片对象
-quitButtonImg = tk.PhotoImage(file='C:/Users/Admin/Desktop/人机交互/期末设计/pic/logout.png')
+quitButtonImg = tk.PhotoImage(file=' ')
 # 恢复默认按钮的图片对象
-defaultButtonImg = tk.PhotoImage(file='C:/Users/Admin/Desktop/人机交互/期末设计/pic/undo.png')
+defaultButtonImg = tk.PhotoImage(file=' ')
 
 # 状态日志标签
 logLabel = tk.Label(window, text="状态日志", width=10, height=1, bg="#F0F0F0")
